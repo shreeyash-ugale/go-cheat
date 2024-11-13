@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clipboard Content</title>
+    <script>
+        function copyToClipboard() {
+            var content = "{{.clipboardContent}}";
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(content).then(function() {
+                    alert("Copied to clipboard!");
+                }, function(err) {
+                    alert("Failed to copy: ", err);
+                });
+            } else {
+                var textArea = document.createElement("textarea");
+                textArea.value = content;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    alert("Copied to clipboard!");
+                } catch (err) {
+                    alert("Failed to copy: ", err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Clipboard Content</h1>
+        <pre id="clipboardContent">{{.clipboardContent}}</pre>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+</body>
+</html>
