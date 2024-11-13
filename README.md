@@ -48,3 +48,4 @@ Allow go-cheat binary through firewall as we will access it from other device on
 7. If "could not paste" is seen, Before starting Drag and Drop (Allow Copy & Paste) to Bookmark Bar from the "Solution - Bookmarklet" section of [this website](https://www.adamsdesk.com/posts/enable-pasting-text-websites-block-it/). Once started, press esc to exit full-screen, click on the bookmark that was drag & dropped, click on enable-fullscreen to continue the test. Copy Paste should now work.
 
 ### TODO: Integrate Groq.com for Direct Question Input and Clipboard Update
+#### Use at your own risk
