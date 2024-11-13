@@ -45,6 +45,6 @@ Allow go-cheat binary through firewall as we will access it from other device on
 4. Copy Question, Paste in You-know-what, get output
 5. Navigate to `http://<IP>:3000/send` on your mobile to access the form.
 6. Enter the data you want to send to the clipboard and submit the form.
-7. If "could not paste" is seen, Before starting Drag and Drop (Allow Copy & Paste) to Bookmark Bar from the "Solution - Bookmarklet" section of [this website](https://www.adamsdesk.com/posts/enable-pasting-text-websites-block-it/). Once started, press esc to exit full-screen, clip on the bookmark that was drag & dropped, click on enable-fullscreen to continue the test. Copy Paste should now work.
+7. If "could not paste" is seen, Before starting Drag and Drop (Allow Copy & Paste) to Bookmark Bar from the "Solution - Bookmarklet" section of [this website](https://www.adamsdesk.com/posts/enable-pasting-text-websites-block-it/). Once started, press esc to exit full-screen, click on the bookmark that was drag & dropped, click on enable-fullscreen to continue the test. Copy Paste should now work.
 
 ### TODO: Integrate Groq.com for Direct Question Input and Clipboard Update
